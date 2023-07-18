@@ -1,5 +1,5 @@
 {
-    "gamename": "Battletech : Pirate's Bane",
+    "name": "Battletech : Pirate's Bane",
     "author":"Kevin Putnam",
     "variables" : {
         "splash_wait_time":500,

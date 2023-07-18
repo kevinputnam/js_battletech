@@ -1,6 +1,6 @@
 class Game {
   constructor(gameData){
-    this.gamename = "";
+    this.name = "";
     this.author = "";
     this.first_scene = 0;
     this.player = {};

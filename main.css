@@ -33,6 +33,7 @@ html {
 }
 
 #mapview {
+    overflow: scroll;
     position: absolute;
     left: 340px;
     top: 30px;
@@ -40,6 +41,12 @@ html {
     height: 780px;
     padding: 10px;
     border:  1px solid #000000;
+    -ms-overflow-style: none; /*hides scroll bars for ms browsers*/
+    scrollbar-width: none; /*hides scroll bars for firefox*/
+}
+
+#mapview::-webkit-scrollbar {
+    display:none; /*hides scroll bars for webkit browsers*/
 }
 
 #sceneview {
@@ -55,6 +62,7 @@ html {
 
 ul, .treeview {
   list-style-type: none;
+  padding-inline-start: 15px;
 }
 
 /* Remove margins and padding from the parent ul */
