@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="game.js"></script>
+    <script src="game_editor.js"></script>
+    <script src="treeview.js"></script>
+</head>
+<body>
+    <div id="editor" class="editor">
+        <div id="gameview">
+            <h2>Game Data</h2>
+            <div id="gamedata">
+            </div>
+        </div>
+        <div id="mapview"></div>
+        <div id="sceneview">
+            <h2>Scene Data</h2>
+            <div id="scenedata"></div>
+        </div>
+    </div>
+    <select id="gamefilepicker" ></select>
+    <button type="button" onclick="get_game_data()">Load</button>
+    <script type="text/javascript">populate_game_picker();</script>
+    <script type="text/javascript">createTreeViewToggles();</script>
+</body>
+</html>
