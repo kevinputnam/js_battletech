@@ -7,7 +7,6 @@ class Game {
     this.scenes = {};
     this.start_player_pos = [];
     this.variables = {};
-    this.actions = [];
     this.things = {};
 
     for (const [key,value] of Object.entries(gameData)){
@@ -17,9 +16,8 @@ class Game {
       "gamename": ["string"],
       "author": ["string"],
       "first_scene": ["integer"],
-      "start_player_pos":["list","integer"],
+      "start_player_pos":["coords"],
       "variables":["dictionary","variable"],
-      "actions":["list","action"],
       "player":["thing"],
       "scenes":["dictionary","scene"],
       "things":["dictionary","thing"]

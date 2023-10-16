@@ -1,0 +1,14 @@
+<canvas id="map" width="720" height="480"></canvas>
+<div style="display:none;">
+  <img id="source" src="assets/backgrounds/campus.png" />
+</div>
+<script>
+    const canvas = document.getElementById("map");
+    const ctx = canvas.getContext("2d");
+    const image = document.getElementById("source");
+
+    image.addEventListener("load", (e) => {
+      ctx.scale(2,2);
+      ctx.drawImage(image, 0,0);
+    });
+</script>

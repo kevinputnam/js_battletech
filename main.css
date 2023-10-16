@@ -18,10 +18,10 @@ html {
     position: absolute;
     left: 10px;
     top:  30px;
-    width: 300px;
-    height: 780px;
-    max-height: 780px;
-    max-width: 300px;
+    width: 400px;
+    height: 270px;
+    max-height: 270px;
+    max-width: 400px;
     border:  1px solid #000000;
     padding:  10px;
     -ms-overflow-style: none; /*hides scroll bars for ms browsers*/
@@ -32,13 +32,42 @@ html {
     display: none; /*hides scroll bars for webkit browsers*/
 }
 
+#editview {
+    overflow: scroll;
+    position: absolute;
+    left: 440px;
+    top: 30px;
+    width: 750px;
+    height: 270px;
+    padding: 10px;
+    border:  1px solid #000000;
+    -ms-overflow-style: none; /*hides scroll bars for ms browsers*/
+    scrollbar-width: none; /*hides scroll bars for firefox*/
+}
+
+#editview::-webkit-scrollbar {
+    display:none; /*hides scroll bars for webkit browsers*/
+}
+
+div .itemview {
+  position:relative;
+  top: 5px;
+  left:15px;
+  width:100%;
+}
+
+div .editsave {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
 #mapview {
     overflow: scroll;
     position: absolute;
-    left: 340px;
-    top: 30px;
-    width: 520px;
-    height: 780px;
+    left: 440px;
+    top: 330px;
+    width: 750px;
+    height: 480px;
     padding: 10px;
     border:  1px solid #000000;
     -ms-overflow-style: none; /*hides scroll bars for ms browsers*/
@@ -49,14 +78,27 @@ html {
     display:none; /*hides scroll bars for webkit browsers*/
 }
 
+div .treenode {
+  position:relative;
+  left:20px;
+  width:100%;
+}
+
 #sceneview {
     position: absolute;
-    left: 890px;
-    top: 30px;
-    width: 300px;
-    height: 780px;
+    left: 10px;
+    top: 330px;
+    width: 400px;
+    height: 480px;
     padding: 10px;
     border:  1px solid #000000;
+    overflow: scroll;
+    -ms-overflow-style: none; /*hides scroll bars for ms browsers*/
+    scrollbar-width: none; /*hides scroll bars for firefox*/
+}
+
+#sceneview::-webkit-scrollbar {
+    display:none; /*hides scroll bars for webkit browsers*/
 }
 
 
@@ -98,4 +140,9 @@ ul, .treeview {
 /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
 .active {
   display: block;
+}
+
+
+.select-highlight {
+    background-color: lightgray;
 }
